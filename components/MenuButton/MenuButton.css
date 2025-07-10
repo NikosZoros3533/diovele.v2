@@ -1,0 +1,51 @@
+.menu-button {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-clash);
+  background-color: var(--background);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 1.3rem 3rem;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.2s ease-in-out;
+  z-index: 101;
+}
+
+.menu-button:hover {
+  background-color: var(--primary);
+  color: var(--background);
+  transform: translateX(-50%) scale(1.1);
+}
+
+.menu-button.pressed {
+  background-color: var(--primary);
+  color: var(--background);
+  transform: translateX(-50%) scale(1.1);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: 8px;
+}
+
+@media (max-width: 600px) {
+  .menu-button {
+    font-size: 1.2rem;
+    padding: 0.8em 1.5em;
+    border-radius: 1.2em;
+    letter-spacing: 0.1em;
+    top: 1.5vw;
+    min-width: 90px;
+  }
+}
+@media (max-width: 400px) {
+  .menu-button {
+    font-size: 1rem;
+    padding: 0.6em 1em;
+    border-radius: 1em;
+    min-width: 70px;
+  }
+}
