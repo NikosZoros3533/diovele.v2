@@ -1,9 +1,10 @@
 "use client";
 import { useState } from "react";
 import MenuButton from "../MenuButton/MenuButton";
-import { motion, AnimatePresence, stagger } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import "../Menu/Menu.css";
+import { usePathname } from "next/navigation";
 
 const ulVariants = {
   hidden: {
@@ -28,6 +29,7 @@ const liVariants = {
 
 export default function Menu() {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const pathname = usePathname();
 
   function toggleMenu() {
     setIsMenuVisible((prevStateNavbar) => !prevStateNavbar);
@@ -47,37 +49,65 @@ export default function Menu() {
               exit="hidden"
             >
               <motion.li variants={liVariants}>
-                <Link href="/" onClick={toggleMenu}>
+                <Link
+                  href="/"
+                  onClick={toggleMenu}
+                  className={pathname === "/" ? "active" : ""}
+                >
                   Home
                 </Link>
               </motion.li>
               <motion.li variants={liVariants}>
-                <Link href="/couples" onClick={toggleMenu}>
+                <Link
+                  href="/couples"
+                  onClick={toggleMenu}
+                  className={pathname === "/couples" ? "active" : ""}
+                >
                   Couples
                 </Link>
               </motion.li>
               <motion.li variants={liVariants}>
-                <Link href="/portraits" onClick={toggleMenu}>
+                <Link
+                  href="/portraits"
+                  onClick={toggleMenu}
+                  className={pathname === "/portraits" ? "active" : ""}
+                >
                   Portraits
                 </Link>
               </motion.li>
               <motion.li variants={liVariants}>
-                <Link href="/food" onClick={toggleMenu}>
+                <Link
+                  href="/food"
+                  onClick={toggleMenu}
+                  className={pathname === "/food" ? "active" : ""}
+                >
                   Food & Beverages
                 </Link>
               </motion.li>
               <motion.li variants={liVariants}>
-                <Link href="/studio-portraits" onClick={toggleMenu}>
+                <Link
+                  href="/studio-portraits"
+                  onClick={toggleMenu}
+                  className={pathname === "/studio-portraits" ? "active" : ""}
+                >
                   Studio
                 </Link>
               </motion.li>
               <motion.li variants={liVariants}>
-                <Link href="/about" onClick={toggleMenu}>
+                <Link
+                  href="/about"
+                  onClick={toggleMenu}
+                  className={pathname === "/about" ? "active" : ""}
+                >
                   About
                 </Link>
               </motion.li>
               <motion.li variants={liVariants}>
-                <Link href="/contact" onClick={toggleMenu}>
+                <Link
+                  href="/contact"
+                  onClick={toggleMenu}
+                  className={pathname === "/contact" ? "active" : ""}
+                >
                   Contact
                 </Link>
               </motion.li>
