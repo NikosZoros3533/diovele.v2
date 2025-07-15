@@ -1,10 +1,26 @@
+'use client';
+import FuzzyText from './../../components/ReactBits/FuzzyText';
 export default function Couples() {
   return (
-    <div>
-      <h1>Couples</h1>
-      <p>Welcome to the Couples page!</p>
-      <p>This is a placeholder for the couples section.</p>
-      <p>More content will be added soon.</p>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <FuzzyText
+        fontSize={50}
+        fontWeight={700}
+        enableHover={true}
+        baseIntensity={0.2}
+        hoverIntensity={1.5}
+      >
+        Couples 
+      </FuzzyText>
+      <FuzzyText
+        fontSize={50}
+        fontWeight={700}
+        enableHover={true}
+        baseIntensity={0.2}
+        hoverIntensity={1.5}
+      >
+        Section
+      </FuzzyText>
     </div>
   );
 }

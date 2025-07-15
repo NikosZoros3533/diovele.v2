@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import bgImg from "@/public/images/bgImg.webp";
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const labelVariants = {
   hidden: { opacity: 0, y: 70 },
@@ -10,9 +10,9 @@ const labelVariants = {
     y: 0,
     transition: {
       type: "spring",
-      stiffness: 80,
-      damping: 70,
-      mass: 0.5,
+      stiffness: 100,
+      damping: 30,
+      mass: 0.2,
       delay: 0.3,
     },
   },
