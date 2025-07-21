@@ -72,12 +72,13 @@ body {
 }
 
 
+
 @media (max-width: 900px) {
   #title {
     font-size: clamp(2rem, 14vw, 8rem);
     letter-spacing: 0.3rem;
     text-align: center;
-    
+
     padding: 0 1vw;
   }
   #home {
@@ -105,3 +106,26 @@ body {
     /* height: 100%; */
   }
 }
+
+/* .circularTextContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  margin-left: 3rem;
+  margin-top: 2rem;
+   transform: translate(-50%, -50%); 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  border: #ffe5ff 10px solid;
+}
+
+.circularText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: none;
+  z-index: 2;
+} */
