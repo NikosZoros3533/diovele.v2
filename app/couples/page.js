@@ -10,7 +10,7 @@ export default function Couples() {
         baseIntensity={0.2}
         hoverIntensity={1.5}
       >
-        Couples 
+        Dionisis 
       </FuzzyText>
       <FuzzyText
         fontSize={50}
@@ -19,7 +19,7 @@ export default function Couples() {
         baseIntensity={0.2}
         hoverIntensity={1.5}
       >
-        Section
+        Velentakis
       </FuzzyText>
     </div>
   );

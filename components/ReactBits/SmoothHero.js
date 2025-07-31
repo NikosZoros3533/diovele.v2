@@ -31,7 +31,7 @@ export const SmoothScrollHero = () => {
 
 const SECTION_HEIGHT = 1500;
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <div
       style={{ height: `calc(${SECTION_HEIGHT}px + 100vh)` }}
